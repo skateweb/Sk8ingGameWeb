@@ -15,7 +15,17 @@ window.RufflePlayer = window.RufflePlayer || {};
 //Below code forces autoplay, no splashscreen and allows sound
 
 window.RufflePlayer.config = {
-"autoplay": "on", "contextMenu": "off","allowFullscreen": true,"splashScreen": false,"unmuteOverlay": "hidden","quality": "best" };
+            "autoplay": "on", "contextMenu": "off", "allowFullscreen": true, "splashScreen": false, "unmuteOverlay": "hidden", "quality": "best", "letterbox": "on", "gamepadButtonMapping": {
+                
+                "dpad-down": 40,
+                "dpad-left": 37,
+                "dpad-right": 39,
+                "south": 38,
+                "west": 69,
+                "east": 40
+            }
+        }
+
 // End custom configuration code above
 window.addEventListener("load", (event) => {
 const ruffle = window.RufflePlayer.newest();
